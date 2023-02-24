@@ -1,111 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="web development, seo, pay per use, ppu, social media advertisement,app">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="image/favicon.ico" type="image/x-icon">
-
-    <title>Kampritech</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>KAMPRITECT</title>
 </head>
-
 <body>
     <div class="navbar">
-        <div class="nav">
-            <span><a href="index.html"><img src="image/logo.jpg" alt="error!"></a></span>
-            <div class="number">
-                <img src="image/whatslogo.png" alt="error!">
-                <p><span>+91 9876543210</span></p>
-            </div>
-            <div class="icon">
-                <a href="www.facebook.com"><img src="image/fb.png" alt="error!"></a>
-                <a href="www.linkedin.com"><img src="image/linkedIn.png" alt="error!"></a>
-                <a href="www.twitter.com"><img src="image/twitter.png" alt="error!"></a>
-                <a href="www.instagram.com"><img src="image/insta.png" alt="error!"></a>
-            </div>
-        </div>
-        <div class="nav1">
-            <ul>
-                <li><a href="about.html">About_us</a></li>
-                <li><a href="webdev.html">Web & App Development</a>
-                </li>
-                <li><a href="digital.html">Digital Marketing</a>
-                    <div class="dbox">
-                        <ul>
-                            <li><a href="digital.html">seo</a></li>
-                            <li><a href="digital.html">ppu</a></li>
-                            <li><a href="digital.html">digital marketing</a></li>
-                            <li><a href="digital.html">sma</a></li>
-                            <li><a href="digital.html">c marketing</a></li>
-                            <li><a href="#influ">Influencer marketing</a></li>
-    
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="brand.html">Branding</a></li>
-                <li><a href="career.html">Career</a></li>
-                <li><a href="#contact">Contact_us</a></li>
-            </ul>
-        </div>
+        <a href="index.html"><img src="image/logo.jpg" alt="error!"><p>KAMPRITECH</p></a>
+        <button class="btn1" onclick="show()">=</button>
     </div>
-    
-    <!-- {{-- --------------For Mobile----------------------- --}} -->
-    
+    <div class="nav">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="webdev.html">Webdev</a></li>
+            <li><a href="digital.html">Digmar</a></li>
+            <li><a href="brand.html">branding</a></li>
+            <li><a href="career.html">career</a></li>
+            <button class="btn" onclick="hide()">*</button>
+        </ul>
+    </div>
     <script>
-        function show() {
-            document.getElementsByClassName('sidenavbar')[0].style.display = 'inline';
-            document.getElementsByClassName('open')[0].style.display = 'none';
-    
+         function show() {
+            document.getElementsByClassName('nav')[0].style.display = 'inline';
+            document.getElementsByClassName('btn1')[0].style.display = 'none';
         }
     
         function hide() {
-            document.getElementsByClassName('sidenavbar')[0].style.display = 'none';
-            document.getElementsByClassName('open')[0].style.display = 'inline';
+            document.getElementsByClassName('nav')[0].style.display = 'none';
+            document.getElementsByClassName('btn1')[0].style.display = 'inline';
         }
     </script>
-    
-        <button class="open" onclick="show()"><img src="image/hamberg.png" alt="error!"></button>
-    
-    
-        <style> .open{ width: 20vw; height: 5vh; background-color: transparent; display: none; position: absolute;float: right; margin-left: 80vw; margin-top: 3vh;} .close{ margin-left: 50%;} .close{ margin-left: 50%;} </style>
-    
-        <div class="sidenavbar">
-            <div class="sidenav">
-                <span><a href="index.html"><img src="image/logo.jpg" alt="error!"></a></span>
-                <button class="close" onclick="hide()"><img src="image/cross.png" alt="error!"></button>
-    
-            </div>
-            <div class="sidenav1">
-            <ul>
-                <li><a href="webdev.html">Web & App Development</a></li>
-                <li><a href="digital.html">Digital Marketing</a></li>
-                    <li><a href="career.html">Career</a></li>
-                <li><a href="brand.html">Branding</a></li>
-                <li><a href="about.html">About_us</a></li>
-                <li><a href="#contact.html">Contact_us</a></li>
-            </ul>
-        </div>
-    </div>
-     <!-- nav -->
-     <div class="navbox">
-        <a href="index.html"><img src="image/logo.jpg" alt="error!"><b>KAMPRITECH</b></a>
-    </div>
-
-    <!-- {{-- -------------------------main body----------------------- --}} -->
-
-    <div class="box">
-        <div class="main">
-            <div class="main1">
+    <div class="containerbox">
+        <div class="box">
+            <div class="box1">
                 <h1><span>BEST DIGITAL MARKETING COMPANY</span></h1>
                 <h3><span>With All Type Digital Marketing Services</span></h3>
                 <p>
@@ -114,12 +54,11 @@
                     consult, strategize and execute to deliver #DigitalExcellence!
                 </p>
             </div>
-            <div class="main2">
-                <img src="image/webimg.png" alt="error!">
+            <div class="box2">
+                <img src="image/img.jpeg" alt="error!">
             </div>
         </div>
-
-        <!-- {{-- -------------------------what we offer--------------------- --}} -->
+        <!-- ------------------------offer--------------------------- -->
         <div class="offer">
             <h2><span>WHAT WE OFFER</span></h2>
             <div class="offer1">
@@ -140,7 +79,7 @@
                         Traffics For Your Online Business. Our Team Is Expert At Identifying The Real-Time Needs Of Your
                         Business And Increasing The Conversion Rate Of Prospects. <a href="digital.html">more....</a> </p>
                 </div>
-                <div class="offerimgbox1">
+                <div class="offerimgbox2">
                     <img src="image/webimg.png" alt="error!">
                     <h5>WEB DEVELOPMENT</h5>
                     <p>Kampritech Aims At Transforming Your Online Business With Our Seamless Web Development Services.
@@ -148,7 +87,7 @@
                         Important Role In Creating A Strong Customer Base . We At Kampritech Ensure To Build Informative
                         Websites To Grow Our Client’s Businesses. <a href="webdev.html">more....</a></p>
                 </div>
-                <div class="offerimgbox2">
+                <div class="offerimgbox3">
                     <img src="image/brand.png" alt="error!">
                     <h5>BRANDING</h5>
                     <p>We Believe In Making The Online Presence Of Your Business Impressive. Apart From Digital
@@ -157,11 +96,9 @@
                         Your Products The Services Categorically. <a href="brand.html">more....</a> </p>
                 </div>
             </div>
-
         </div>
-
-        <!-- {{-- --------------------------why kempritech------------------------ --}} -->
-        <div class="whywe">
+         <!-- {{-- --------------------------why kempritech------------------------ --}} -->
+         <div class="whywe">
             <h2><span>WHY KAMPRITECH DIGITAL</span></h2>
             <div class="whywe1">
                 <p>
@@ -197,7 +134,7 @@
                             their product & services.</p>
                     </div>
                 </div>
-                <div class="we1">
+                <div class="we3">
                     <img src="image/account.png" alt="error!">
                     <div class="we21">
                         <h5>Dedicated Account Manager:</h5>
@@ -214,7 +151,7 @@
                             managers do.</p>
                     </div>
                 </div>
-                <div class="we2">
+                <div class="we4">
                     <img src="image/tech.png" alt="error!">
                     <div class="we21">
                         <h5>Latest Technology:</h5>
@@ -229,8 +166,6 @@
                 </div>
             </div>
         </div>
-
-
         <!-- {{-- ----------------------why belive in us-------------------------- --}} -->
         <div class="belive">
             <h2><span>THEY BELIEVE IN US</span></h2>
@@ -254,48 +189,47 @@
                 </div>
             </div>
         </div>
-
-        <!-- {{-- ------------------------------Testimonial----------------------- --}} -->
-        <div class="clientbox">
-        <h2><span>Clients Testimonials</span></h2>
-        <div class="client">
-            <div class="client1">
-                <p><img src="image/dquate.jfif" alt="error!"></p>
-                <p>"Kempritech Digital is an amazing plateform that helped me to extend my access to the targeted
-                    audiences. Their social media marketing team is great
-                    that gave the expected number of leads for my products and services. I am greatful to their team of
-                    digital marketing experts."
-
-                </p>
-                <img src="image/myimg.png" alt="error!">
-                <p><b>Kempritech</b></p>
-                <p>Siddhu Mehra</p>
+         <!-- {{-- ------------------------------Testimonial----------------------- --}} -->
+         <div class="clientbox">
+            <h2><span>Clients Testimonials</span></h2>
+            <div class="client">
+                <div class="client1">
+                    <p><img src="image/dquate.jfif" alt="error!"></p>
+                    <p>"Kempritech Digital is an amazing plateform that helped me to extend my access to the targeted
+                        audiences. Their social media marketing team is great
+                        that gave the expected number of leads for my products and services. I am greatful to their team of
+                        digital marketing experts."
+    
+                    </p>
+                    <img src="image/myimg.png" alt="error!">
+                    <!-- <p><b>Kempritech</b></p> -->
+                    <p>Siddhu Mehra</p>
+                </div>
+                <div class="client2">
+                    <p><img src="image/dquate.jfif" alt="error!"></p>
+                    <p>"I feel a miracle about the most appealing website I have after I contacted the experienced and
+                        dedicated development team at Kempritech Digital.
+                        Website development is a critical task but they provide me with the most responsive plateform to
+                        sell my cosmetics products online. A Million thanks
+                        all."</p>
+                    <img src="image/myimg.png" alt="error!">
+                    <!-- <p><b>Kempritech</b></p> -->
+                    <p>Siddhu Mehra</p>
+                </div>
+                <div class="client3">
+                    <p><img src="image/dquate.jfif" alt="error!"></p>
+                    <p>"The SEO team at Kempritech Digital holds vast experience in optimizing the Website with the right
+                        selection of keywords and other latest Google SEO
+                        strategies. By the dint of their hard work, today I am making good earnings from my ranked
+                        e-commerce website of the electronic products. Their digital
+                        marketing services are quite appreciable."</p>
+                    <img src="image/myimg.png" alt="error!">
+                    <!-- <p><b>Kempritech</b></p> -->
+                    <p>Siddhu Mehra</p>
+                </div>
             </div>
-            <div class="client2">
-                <p><img src="image/dquate.jfif" alt="error!"></p>
-                <p>"I feel a miracle about the most appealing website I have after I contacted the experienced and
-                    dedicated development team at Kempritech Digital.
-                    Website development is a critical task but they provide me with the most responsive plateform to
-                    sell my cosmetics products online. A Million thanks
-                    all."</p>
-                <img src="image/myimg.png" alt="error!">
-                <p><b>Kempritech</b></p>
-                <p>Siddhu Mehra</p>
             </div>
-            <div class="client3">
-                <p><img src="image/dquate.jfif" alt="error!"></p>
-                <p>"The SEO team at Kempritech Digital holds vast experience in optimizing the Website with the right
-                    selection of keywords and other latest Google SEO
-                    strategies. By the dint of their hard work, today I am making good earnings from my ranked
-                    e-commerce website of the electronic products. Their digital
-                    marketing services are quite appreciable."</p>
-                <img src="image/myimg.png" alt="error!">
-                <p><b>Kempritech</b></p>
-                <p>Siddhu Mehra</p>
-            </div>
-        </div>
-        </div>
-        <!-- {{-- --------------------------company vision--------------------------- --}} -->
+             <!-- {{-- --------------------------company vision--------------------------- --}} -->
         <div class="vision">
             <h2><span>Our Company Vision</span></h2>
             <div class="vision1">
@@ -321,1391 +255,905 @@
                 </p>
             </div>
         </div>
-
-        <!-- {{-- ----------------------------Navbar--------------------------------- --}} -->
-
-        <div class="add" id="contact">
-            <div class="message">
-                <h2><span>Get Instant Your Requirement</span></h2>
-                <div class="message1">
-                    <form action="https://formsubmit.co/siddhukumar493@gmail.com" method="post">
-                        <!-- @csrf -->
-                        <label>Name</label>
-                        <input name="name" type="name" placeholder="Name"><br><br>
-                        <label>Email</label>
-                        <input name="email" type="email" placeholder="Email"><br><br>
-                        <label>Number</label>
-                        <input name="number" type="number" placeholder="Number"><br><br>
-                        <label>Text</label>
-                        <textarea name="text" type="text" placeholder="Text (optional)"></textarea><br><br><br>
-                        <button class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
+        <!-- ----------------navbar------------ -->
+        <div class="about" id="about">
+            <div class="about1">
+                <form>
+                    <label>NAME</label>
+                    <input name="name" type="name" placeholder="Name"><br><br>
+                    <label>E-MAIL</label>
+                    <input name="email" type="email" placeholder="E-mail"><br><br>
+                    <label>NUMBER</label>
+                    <input name="number" type="number" placeholder="Number"><br><br>
+                    <label>TEXT</label>
+                    <input name="text" type="text" placeholder="Text (optional)"><br><br>
+                    <button class="btn btn-primary">Submit</button>
+                </form>
             </div>
-            <div class="add1">
-                <h2><span>Get In Touch</span></h2>
-                <h5><span>Contact Us We'll Give You a Solution</span></h5>
-                <div class="cont">
-                    <h5>Contact No</h5>
-                    <p>+91 9874563210<br>+91 9630215487</p>
-                </div>
-                <div class="cont1">
-                    <h5>Email Id</h5>
-                    <p>kampritechdigi@gmail.com</a></p>
-                </div>
-                <div class="cont">
-                    <h5>Address</h5>
-                    <p>A-1108, GD Colony, Mayur Vihar Phase 3, New Delhi-110096
-                    </p>
-        
-                </div>
-                <div class="cont1">
-                    <h5>Skype Id</h5>
-                    <p>kampritechdigital963.skype</p>
-        
+            <div class="about2">
+                    <h2>About us</h2>
+                <p>
+                    We are passionate about helping businesses succeed online
+                    because we know how important it is for your
+                    business to be visible online. Our team of experts has years
+                    of experience in helping businesses
+                    optimize their digital presence for maximum results.
+                    XYZ Digital is a marketing agency that specializes in
+                    working with companies to build their brand. We
+                    believe that a successful brand is built on trust and
+                    integrity, which is why we take the time to know
+                    you and your business before we do anything. We build our
+                    relationships with clients one at a time, so
+                    we can tailor a plan that's unique to your needs. Our
+                    account managers are dedicated to helping you grow
+                    your business and become the best version of yourself so
+                    that you can reach your goals!
+                    Our dedicated account manager will be available 24/7 to
+                    answer any questions or concerns you may have at
+                    any time during your campaign. We also offer free
+                    consultations, so if there’s anything we can do to
+                    help further your goals, please let us know!
+                    You can read more about us on our website or by contacting
+                    us directly at Kampritech.com !
+                </p>
+                <div class="about3">
+                    <a href="#"><img src="image/fb.png" alt="error!"></a>
+                    <a href="#"><img src="image/insta.png" alt="error!"></a>
+                    <a href="#"><img src="image/whatslogo.png" alt="error!"></a>
+                    <a href="#"><img src="image/linkedIn.png" alt="error!"></a>
                 </div>
             </div>
         </div>
-        
-        
-        <div class="footer">
-            <p>&copy;copyright:2023</p>
-        </div>
-        <!-- {{ View::make('footer') }} -->
+
+
+    </div>
+    <div class="footer">
+        <p>&copy;RANKS</p>
     </div>
 </body>
 
 <style>
     *{
-        margin: 0%; padding: 0%;
-        box-sizing: border-box;
+        margin: 0%; padding: 0%; box-sizing: border-box;
+        font-size: medium; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    .navbox{
-        background-color: transparent;
-        color: rgb(0, 0, 0);
-        width: 100vw;
-        height: 10vh;
-        display: none;
+    .navbar{
+        background-color: rgb(255, 255, 255); color: black;
+        width: 100vw; height: 10vh;
+        /* display: inline-flex; */
     }
 
-    .navbox a b{
-        text-decoration: none; color: #649f75;
-        margin-left: 2vw;
-    }
-
-    .navbox img{
-        width: 10vw; height: 10vh;
-        margin-left: 10vw;
-    }
-
-    button img{
-        width: 3vw; height: 3vh;
-    }
-
-    .navbar {
-        background-color: rgb(81, 180, 127);
-        color: white;
-        width: 100vw;
-        height: 19vh;
-        margin: 0;
-        padding: 0;
-    }
-
-    .nav {
-        background-color: blueviolet;
-        color: white;
-        width: 100vw;
-        height: 10vh;
-        text-align: center;
-
-    }
-
-    .nav span a img {
-        width: 5vw; height: 5vh;
-        margin-left: 2vw;
-        margin-top: 2.5vh;
-        border-radius: 40%;
-    }
-
-    .nav h2 span a {
-        text-decoration: none;
-        color: #649f75
-    }
-
-    .nav1 {
-        background-color: #ffffff;
-        color: rgb(78, 75, 75);
-        width: 100vw;
-        height: 10vh;
-        position: relative;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        text-align: center;
-    }
-
-    .nav1 ul {
-        display: inline-flex;
-        list-style: none;
-        margin-left: 20vw;
-    }
-
-    .nav1 ul li {
-        margin-left: 2vw;
-        margin-top: 3vh;
-    }
-
-    .nav1 ul li:hover {
-        color: greenyellow;
-    }
-
-    .nav1 ul li a {
-        text-decoration: none;
-        color: rgb(78, 75, 75);
-    }
-
-    .nav1 ul li a:hover {
-        color: rgb(215, 15, 15);
-    }
-
-    /* -----------------For Mobile------------------ */
-
-    .sidenavbar {
-        background-color: rgb(81, 180, 127);
-        color: white;
-        width: 35vw;
-        height: 19vh;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        display: none;
-        margin-left: 1vw;
-    }
-
-    .sidenav {
-        background-color: blueviolet;
-        color: white;
-        width: 35vw;
-        height: 8vh;
-        /* text-align: center; */
-    }
-
-    .sidenav button{
-        background-color: white;
-        width: 0vw;
-        height: 0vh;
-        position: fixed;
-        margin-left: 10vw;
-    }
-
-    .sidenav span a img {
-        width: 8vw; height: 8vh;
-        margin-left: 12vw;
-        border-radius: 40%;
-    }
-
-    .sidenav1 {
-        background-color: #ffffff;
-        color: rgb(142, 49, 49);
-        width: 35vw;
-        height: 50vh;
-        position: fixed;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    }
-
-    .sidenav1 ul {
-        display: inline-block;
-        list-style: none;
-
-    }
-
-    .sidenav1 ul li {
-        margin-top: 3vh;
-    }
-
-    .sidenav1 ul li:hover {
-        color: greenyellow;
-    }
-
-    .sidenav1 ul li a {
-        text-decoration: none;
-        color: rgb(146, 31, 31);
-    }
-
-    .sidenav1 ul li a:hover {
-        color: rgb(215, 15, 15);
-    }
-
-    .number {
-        background-color: transparent;
-        color: rgb(255, 255, 255);
-        width: 15vw;
-        height: 5vh;
-        text-align: center;
-        margin-top: 3vh;
-        margin-left: 70vw;
-        display: inline-flex;
-    }
-
-    .number img {
-        width: 2vw;
-        height: 3vh;
-        margin-left: .5vw;
-        margin-top: .5vh;
-    }
-
-    .nav1 ul li:hover .dbox2 {
-        display: block;
-    }
-
-    .dbox {
-        background-color: rgb(255, 255, 255);
-        color: rgb(147, 30, 30);
-        width: 15vw;
-        height: 27vh;
-        margin-left: -3vw;
-        position: absolute;
-        display: none;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    }
-
-    .dbox ul {
-        list-style: none;
-        line-height: 1vh;
-        display: inline-block;
-        text-align: center;
-        margin-left: -5vw;
-    }
-
-    .nav1 ul li:hover .dbox {
-        display: block;
-    }
-
-    .icon {
-        background-color: transparent;
+    .navbar a img{
+            width: 5vw; height: 5vh; margin-left: 1vw;
+        }
+        .navbar p{
+            text-decoration: none; color: #000000; margin-left: 6vw; margin-top: -4vh;
+        }
+        .navbar p:hover{
+            color: #bd0000;
+        }
+        .btn1{
+            background-color: transparent; margin-right: 5vw;
+            width: 10vw; height: 5vh;
+        }
+        .btn1:hover{
+            background-color: #b8bec2; border: none;
+        }
+        .nav{
+            background-color: #ffffff; color: #000000; width: 37vw; height: 5vh;
+            margin-left: 60%; margin-top: -8vh; position: absolute; font-size: small;
+            border-radius: 5vw; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            display: none;
+        }
+        .nav ul{
+            display: inline-flex;
+        }
+        .nav ul button{
+            margin-left: 2vw;
+        }
+        .nav ul li{
+            list-style: none;  margin-top: 1vh;
+        }
+        .nav ul li a{
+            margin-left: 3vw; text-decoration: none; color: #000000;
+        }
+        .nav ul li a:hover{
+            color: red;
+        }
+    .containerbox{
+        background-image: url("image/mob.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-color: rgb(255, 255, 255); */
         color: black;
-        width: 10vw;
-        height: 5vh;
-        text-align: center;
-        margin-top: 3vh;
-        position: absolute;
-        display: inline-flex;
-        margin-left: 89vw;
-    }
-
-    .icon img {
-        width: 2vw;
-        height: 3vh;
-        margin-left: .5vw;
-    }
-
-    .box {
-        background-color: transparent;
-        color: rgb(132, 130, 130);
-        width: 100vw;
-        height: 81vh;
+        width: 100vw; height: 85vh;
         overflow-y: scroll;
-        text-align: center;
+        text-align: center; justify-items: center;
     }
 
-    .main {
-        background-image: url("image/t8.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: rgb(255, 255, 255);
-        width: 98.9vw;
-        height: 57vh;
+    .box{
+        background-color: transparent; color: black;
+        width: 98.9vw; height: 40vh;
         display: inline-flex;
     }
 
-    .main1 {
-        color: rgb(0, 0, 0);
-        width: 50vw;
-        height: 40vh;
-        margin-top: 10vh;
-        padding: 2vw;
-    }
-
-    .main2{
-        color: rgb(0, 0, 0);
-        width: 40vw;
-        height: 50vh;
-        margin-top: 1vh;
-    }
-
-    .main2 img{
-        width: 40vw;
-        height: 50vh;
-        padding: 1vw;
-        transition: 1s;
-    }
-    .main2 img:hover{
-        transform: scale(1.1);
-    }
-
-    button a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .offer {
-        background-image: url("image/t6.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: rgb(255, 255, 255);
-        width: 98.9vw;
-        height: 97vh;
-    }
-
-    .offer h2 span {
-        padding: 1vw;
-    }
-
-    .offer1 {
-        background-color: transparent;
-        width: 80vw;
-        height: 13vh;
-        margin-left: 10vw;
-    }
-
-    .offer a {
-        text-decoration: none;
-        color: red;
-    }
-
-    .offerimgbox {
-        background-color: transparent;
-        width: 80vw;
-        height: 66vh;
-        display: inline-flex;
-        text-align: center;
-    }
-
-    .offerimgbox1 {
-        background-color: transparent;
-        color: #ffffff;
-        width: 20vw;
-        height: 66vh;
+    .box1{
+        background-color: transparent; color: black;
+        width: 50vw; height: 40vh;
         margin-left: 5vw;
-        transition: 1s;
-    }
-    .offerimgbox1:hover{
-        transform: scale(1.1);
     }
 
-    .offerimgbox2 {
-        background-color: transparent;
-        color: #ffffff;
-        width: 20vw;
-        height: 66vh;
-        margin-left: 5vw;
-        transition: 1s;
-    }
-    .offerimgbox2:hover{
-        transform: scale(1.1);
+    .box2{
+        background-color: transparent; color: black;
+        width: 40vw; height: 40vh;
+        margin-right: 5vw;
     }
 
-    .offerimgbox h5 {
-        margin-right: .5vh;
+    .box2 img{
+        width: 30vw; height: 30vh; margin-top: 5vh;
+        /* transition: 5s;
+        transform: scale(1.1); */
+    }
+
+    .offer{
         color: black;
-    }
-    .offerimgbox p{
-        text-align: left;
-    }
-
-    .offerimgbox img {
-        width: 20vw;
-        height: 30vh;
-        padding-bottom:1.5vh;
+        width: 98.9vw; height: 80vh;
+        /* display: inline-flex; */
     }
 
-    .whywe {
-        background-image: url("image/t1.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .offer1{
         color: black;
-        width: 98.9vw;
-        height: 114vh;
-        font-size: 1.5vw;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 70vw; height: 15vh; margin-left: 15vw;
     }
-
-    .whywe1 {
-        background-color: transparent;
-        color: #000000;
-        width: 80vw;
-        height: 25vh;
-        margin-left: 10vw;
-    }
-
-    .we {
-        background-color: transparent;
-        color: #000000;
-        width: 80vw;
-        height: 55vh;
-        margin-left: 10vw;
-        font-size: 1vw;
-    }
-
-    .we img {
-        width: 3vw;
-        height: 5vh;
-        float: left;
-        margin-left: 1vw;
-        border-radius: 100%;
-    }
-
-    .we1 {
-        background-color: transparent;
-        color: #000000;
-        width: 30vw;
-        height: 37vh;
-        float: left;
-        margin-left: 8vw;
-        margin-top: 1vh;
-        box-shadow: rgba(0, 0, 255, 0.2) 0px 7px 29px 0px;
-        transition: 1s;
-    }
-    .we1:hover{
-        transform: scale(1.1);
-    }
-
-    .we2 {
-        background-color: transparent;
-        color: #000000;
-        width: 30vw;
-        height: 37vh;
-        float: right;
-        margin-right: 8vw;
-        margin-top: 1vh;
-        box-shadow: rgba(0, 0, 255, 0.2) 0px 7px 29px 0px;
-        transition: 1s;
-    }
-    .we2:hover{
-        transform: scale(1.1);
-    }
-
-    .we11 {
-        background-color: transparent;
-        color: #000000;
-        width: 25vw;
-        height: 25vh;
-        float: right;
-        text-align: left;
-    }
-
-    .we11 h5 {
-        float: left;
-        padding-left: 1vw;
-    }
-
-    .we11 p {
-        float: left;
-        padding: 1vw;
-        margin-top: -1.5vw;
-    }
-
-    .we21 {
-        background-color: transparent;
-        color: #000000;
-        width: 25vw;
-        height: 25vh;
-        float: right;
-        text-align: left;
-    }
-
-    .we21 h5 {
-        float: left;
-        padding-left: 1vw;
-    }
-
-    .we21 p {
-        float: left;
-        padding: 1vw;
-        margin-top: -1.5vw;
-    }
-
-    .belive {
-        background-color: transparent;
+    
+    .offerimgbox{
+        /* background-color: aliceblue; */
         color: black;
-        width: 98.9vw;
-        height: 80vh;
-        margin-top: 2vh;
-        text-align: none;
-    }
-
-    .beliveimg {
-        background-color: transparent;
-        color: black;
-        width: 98.9vw;
-        height: 67vh;
-    }
-
-    .beliveimg1 {
-        background-color: transparent;
-        color: black;
-        width: 98.9vw;
-        height: 33vh;
+        width: 98.9vw; height: 60vh;
         display: inline-flex;
     }
 
-    .beliveimg img {
-        width: 25vw;
-        height: 30vh;
+    .offerimgbox img{
+        width: 20vw; height: 20vh;
     }
 
-    .beliveimg2 {
-        background-color: transparent;
+    .offerimgbox1{
+        background-color: beige;
         color: black;
-        width: 98.9vw;
-        height: 33vh;
+        width: 30vw; height: 55vh; margin-left: 2vw;
+    }
+
+    .offerimgbox2{
+        background-color: beige;
+        color: black;
+        width: 30vw; height: 55vh; margin-left: 2vw;
+    }
+
+    .offerimgbox3{
+        background-color: beige;
+        color: black;
+        width: 30vw; height: 55vh; margin-left: 2vw;
+    }
+
+    .whywe{
+        /* background-color: beige; */
+        color: black;
+        width: 98.9vw; height: 80vh;
+    }
+
+    .whywe1{
+        /* background-color: rgb(124, 175, 119); */
+        color: black;
+        width: 70vw; height: 15vh;
+        margin-left: 15vw;
+    }
+
+    .we{
+        /* background-color: aliceblue; */
+        color: black;
+        width: 98.9vw; height: 60vh;
         display: inline-flex;
+    }
+
+    .we1{
+        background-color: rgb(96, 194, 122);
+        color: black;
+        width: 20vw; height: 60vh;
+        margin-left: 4vw;
+    }
+
+    .we2{
+        background-color: rgb(125, 119, 209);
+        color: black;
+        width: 20vw; height: 60vh;
+        margin-left: 4vw;
+    }
+
+    .we3{
+        background-color: rgb(172, 211, 100);
+        color: black;
+        width: 20vw; height: 60vh;
+        margin-left: 4vw;
+    }
+
+    .we4{
+        background-color: rgb(96, 194, 122);
+        color: black;
+        width: 20vw; height: 60vh;
+        margin-left: 4vw;
+    }
+
+    .belive{
+        /* background-color: rgb(96, 194, 122); */
+        color: black;
+        width: 98.9vw; height: 75vh;
+    }
+
+    .beliveimg{
+        width: 98.9vw; height: 60vh;
+    }
+
+    .belive img{
+        width: 23vw; height: 30vh;
     }
 
     .clientbox{
-        background-image: url("image/t5.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         color: black;
-        width: 98.9vw;
-        height: 60vh;
+        width: 98.9vw; height: 50vh;
+        font-size: small;
     }
 
-    .client {
+    .client{
         color: black;
-        width: 98.9vw;
-        height: 55vh;
-        text-align: none;
-        line-height: 2.5vh;
-        display: inline-flex
-    }
-
-    .client p img {
-        width: 2vw;
-        height: 2vh;
-    }
-
-    .client img {
-        width: 8vw;
-        height: 15vh;
-        border-radius: 100vw;
-    }
-
-
-    .client1 {
-        background-color: #ffffff;
-        color: black;
-        width: 30vw;
-        height: 45vh;
-        margin-top: 2.5vh;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        margin-left: 2.5vw;
-        transition: 1s;
-    }
-
-    .client2 {
-        background-color: #ffffff;
-        color: black;
-        width: 30vw;
-        height: 45vh;
-        margin-top: 2.5vh;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        margin-left: 2.5vw;
-        transition: 1s;
-    }
-
-    .client3 {
-        background-color: #ffffff;
-        color: black;
-        width: 30vw;
-        height: 45vh;
-        margin-top: 2.5vh;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        margin-left: 2.5vw;
-        transition: 1s;
-    }
-
-    .client1:hover{
-        transform: scale(1.1);
-    }
-    .client2:hover{
-        transform: scale(1.1);
-    }
-    .client3:hover{
-        transform: scale(1.1);
-    }
-
-    .vision {
-        /* background-image: url("image/viewimg1.jpeg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; */
-        background-color: transparent;
-        width: 98.9vw;
-        height: 53vh;
-        font-size: 1.1rem;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    .vision h2 {
-        color: red;
-        padding: 2vh;
-    }
-    
-    .vision1 {
-        background-color: transparent;
-        color: rgb(0, 0, 0);
-        width: 80vw;
-        height: 45vh;
-        margin-left: 10vw;
-        margin-top: -2vh;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    .footer{
-        background-color: #63616a; color: black;
-        width: 100w; height: 4vh; text-align: center;
-    }
-
-    .add {
-        background-image: url("image/t7.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: black;
-        width: 98.9vw;
-        height: 55vh;
-        text-align: center;
+        width: 98.9vw; height: 45vh;
         display: inline-flex;
     }
 
-    .message {
-        color: rgb(255, 255, 255);
-        width: 40vw;
-        height: 55vh;
+    .client p img{
+        width: 2vw; height: 2vh;
+        border-radius: 5vw;
     }
 
-    .message1 {
-        background-color: transparent;
-        color: rgb(255, 255, 255);
-        width: 30vw;
-        height: 40vh;
-        margin-top: 5vh;
-        margin-left: 5vw;
+    .client img{
+        width: 10vw; height: 10vh;
     }
 
-    .message1 label {
-        float: left;
-        margin-left: 5vw;
-    }
-
-    .message1 input {
-        float: right;
-        margin-right: 5vw;
-    }
-    input:hover{
-        background-color: #63616a;
-    }
-    textarea:hover{
-        background-color: #63616a;
-    }
-
-    .message1 textarea {
-        float: right;
-        margin-right: 6vw;
-    }
-
-    .add1 {
-        background-color: transparent;
+    .client1{
+        background-color: rgb(131, 238, 179);
         color: black;
-        width: 58.9vw;
-        height: 55vh;
-        line-height:.5vh;
-    }
-
-    .cont {
-        background-color: transparent;
-        color: rgb(182, 178, 178);
-        width: 20vw;
-        height: 15vh;
-        float: left;
-        margin-left: 8vw;
-        margin-top: 3vh;
-        line-height:3.5vh;
-        transition: 1s;
-    }
-    .cont:hover{
-        transform: scale(1.1);
-        background-color: #797171;
-        color: rgb(0, 0, 0);
-    }
-
-    .add h5 {
-        color: #ffffff;
-    }
-
-    .add1 span {
-        color: #ffffff;
-    }
-
-    .cont1 {
-        background-color: transparent;
-        color: rgb(176, 175, 175);
-        width: 20vw;
-        height: 15vh;
-        float: right;
-        margin-right: 8vw;
-        margin-top: 3vh;
-        line-height:3.5vh;
-        transition: 1s;
-    }
-    .cont1:hover{
-        transform: scale(1.1);
-        background-color: #747070;
-        color: rgb(0, 0, 0);
-    }
-
-
-
-    /* ----------------------------------------------- */
-    /* --------------------For Mobile----------------- */
-    /* ----------------------------------------------- */
-    @media (max-width:1285px){
-        .box{
-            width: 100vw;
-        }
-
-        .main{
-            width: 100vw;
-        }
-
-        .offer{
-            width: 100vw;
-        }
-
-        .whywe{
-            width: 100vw;
-        }
-
-        .belive{
-            width: 100vw;
-        }
-
-        .clientbox{
-            width: 100vw;
-        }
-
-        .client3{
-            height: 47vh;
-        }
-
-        .vision{
-            width: 100vw;
-        }
-
-        .add{
-            width: 100vw;
-        }
-    }
-
-    /* ----------------------------------------------- */
-    /* --------------------For Mobile----------------- */
-    /* ----------------------------------------------- */
-
-    @media (max-width:1025px){
-        .number{
-            margin-left: 67vw;
-        }
-
-        .main{
-            height: 70vh;
-        }
-
-        .main2 img{
-            width: 50vw;
-            height: 70vh;
-            padding: 5vw;
-        }
-
-        .offer{
-            height: 125vh;
-        }
-
-        .offer1{
-            height: 20vh;
-        }
-
-        .belive{
-            height: 50vw;
-        }
-
-        .clientbox{
-            height: 70vh;
-        }
-
-        .client1{
-            height: 50vh;
-        }
-
-        .client2{
-            height: 51vh;
-        }
-        
-        .client3{
-            height: 54vh;
-        }
-
-        .vision {
-         height: 85vh;
-        }
-
-            .add {
-            width: 100vw;
-            height: 60vh;
-            text-align: center;
-        }
-        .message1 label {
+        width: 30vw; height: 42vh;
         margin-left: 2vw;
     }
 
-    .message1 input {
-        margin-right: 2vw;
+    .client2{
+        background-color: rgb(131, 238, 179);
+        color: black;
+        width: 30vw; height: 42vh;
+        margin-left: 2vw;
     }
 
-    .message1 textarea {
-        margin-right: 3vw;
+    .client3{
+        background-color: rgb(131, 238, 179);
+        color: black;
+        width: 30vw; height: 42vh;
+        margin-left: 2vw;
     }
 
+    .vision{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        width: 98.9vw; height: 45vh;   
     }
 
-    /* ----------------------------------------------- */
-    /* --------------------For Mobile----------------- */
-    /* ----------------------------------------------- */
-     @media (max-width:1015px) {
-        .box{
-            width: 100vw; height: 90vh;
+    .vision1{
+        /* background-color: rgb(238, 131, 229); */
+        color: rgb(0, 0, 0);
+        width: 80vw; height: 38vh;
+        margin-left: 10vw; 
+    }
+
+    .about{
+              background-color: #8bb689;
+              color: #ffffff;
+              width: 98.9vw;
+              height: 60vh;
+              display: inline-flex;
+        }
+        .about1{
+              color: #000000;
+              width: 35vw;
+              height: 50vh;
+              padding: 3vw;
+        }
+        .about2{
+              color: #000000;
+              width: 67.9vw;
+              height: 50vh;
+              font-size: large;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
-        .navbar {
-            display: none;
-        }
-
-        .navbox{
-            display: block;
-        }
-
-        .open{
-             display: block;
-            }
-
-        .main{
-            display: block;
-            height: 65vh;
-        }
-
-        .main1{
-            width: 100vw;
-            height: 20vh;
-            font-size: 1.3rem;
-        }
-
-        .main2{
-            width: 100vw;
-            height: 40vh;
-        }
-
-        .main2 img{
-            width: 80vw;
-            height: 40vh;
-        }
-
-        .offer{
-            font-size: 1.2rem;
-            height: 102vh;
-        }
-
-        .offer1{
-            height: 15vh;
-        }
-
-        .offerimgbox{
-            display: block;
-            width: 100vw;
-            height: 80vh;
-        }
-
-        .offerimgbox img{
-            width: 30vw;
-            height: 20vh;
-            float: left;
+        .about2 p{
             padding: 1vw;
         }
 
+        .about3{
+              color: #ffffff;
+              width: 67.9vw;
+              height: 8vh;
+              margin-top: 13vh;
+              text-align: center; justify-items: center;
+        }
+        .about3 a img{
+            width: 2vw; height: 2vh;
+            margin-left: .5vw;
+        }
+        .about1 label{
+            float: left;
+            margin-left: 1rem;
+        }
+        .about1 input{
+            float: right;
+            margin-right: 4rem;
+        }
+
+        .about1 input:hover{
+            background-color: #b6b6b6;
+        }
+
+    .footer{
+        background-color: beige; color: black;
+        width: 100vw; height: 5vh;
+        text-align: center; justify-items: center;
+    }
+
+
+    /* ---------------------mobile-1------------------- */
+    @media screen and (max-width:1290px){
+        *{
+            font-size:large;
+        }
+
+        .nav{
+            margin-left: 50%; 
+        }
+
+    .box{
+        width: 100vw;
+    }    
+
+    .whywe{
+        background-color: beige;
+        width: 100vw;
+        color: black;
+        height: 98vh;
+    }
+
+    .whywe1{
+        color: black;
+        width: 70vw; height: 15vh;
+        margin-left: 15vw;
+    }
+
+    .we{
+        color: black;
+        width: 98.9vw; height: 75vh;
+        display: inline-flex;
+    }
+
+    .we1{
+        height: 60vh;
+    }
+
+    .we2{
+        height: 70vh;
+    }
+
+    .we3{
+        height: 74vh;
+    }
+
+    .we4{
+        height: 60vh;
+    }
+
+    .belive{
+        color: black;
+        width: 98.9vw; height: 75vh;
+    }
+
+    .beliveimg{
+        width: 98.9vw; height: 60vh;
+    }
+    
+    .belive img{
+        width: 23vw; height: 30vh;
+    }
+    
+    .clientbox{
+        width: 100vw; height: 57vh;
+        font-size: small;
+    }
+
+    .client{
+        background-color: #ad92e6;
+        width: 100vw; height: 50vh;
+    }
+
+    .client img{
+        width: 10vw; height: 10vh;border-radius: 5vw;
+    }
+
+    .client1{
+        background-color: rgb(131, 238, 179);
+        height: 43vh;
+        margin-left: 2.5vw;
+    }
+
+    .client2{
+        background-color: rgb(131, 238, 179);
+        height: 45vh;
+        margin-left: 2.5vw;
+    }
+
+    .client3{
+        background-color: rgb(131, 238, 179);
+        height: 45vh;
+        margin-left: 2.5vw;
+    }
+
+    .vision{
+        background-color: rgb(255, 255, 255);
+        width: 100vw; height: 53vh;   
+    }
+
+    .vision1{
+        width: 90vw; height: 42vh;
+        margin-left: 5vw; 
+    }
+
+    .about{
+              background-color: #8bb689;
+              color: #ffffff;
+              width: 100vw;
+              height: 55vh;
+              display: inline-flex;
+        }
+        .about1{
+              color: #000000;
+              width: 35vw;
+              height: 50vh;
+              padding: 3vw;
+        }
+        .about2{
+              color: #000000;
+              width: 67.9vw;
+              height: 50vh;
+              font-size: large;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .about2 p{
+            padding: 1vw;
+        }
+
+        .about3{
+              /* background-color: aquamarine; */
+              margin-top: 3vh;
+        }
+        
+        .about1 input{
+            margin-right: 1rem;
+        }
+        
+    }
+
+    /* ------------------mobile-2----------------------- */
+     @media screen and (max-width:1030px){
+        *{
+            font-size:large;
+        }
+
+        .nav{
+            margin-left: 45%; 
+        }
+
+    .box{
+        background-color: #8bb689;
+        width: 100vw;
+    }    
+
+    .offer{
+        background-color: #8bc6e4;
+        width: 100vw; height: 118vh;
+    }
+
+    .offer1{
+        height: 26vh;
+    }
+
+    .offerimgbox{
+        height: 81vh;
+    }
+
+    .offerimgbox1{
+        height: 78vh;
+    }
+
+    .offerimgbox2{
+        height: 78vh;
+    }
+
+    .offerimgbox3{
+        height: 78vh;
+    }
+
+    .whywe{
+        background-color: beige;
+        height: 170vh;
+    }
+
+    .whywe1{
+        width: 70vw; height: 28vh;
+    }
+
+    .we{
+        width: 100vw; height: 128vh;
+    }
+
+    .we1{
+        height: 86vh;
+    }
+
+    .we2{
+        height: 104vh;
+    }
+
+    .we3{
+        height: 126vh;
+    }
+
+    .we4{
+        height: 82vh;
+    }
+
+    .belive{
+        width: 100vw; height: 85vh;
+    }
+
+    .beliveimg{
+        width: 100vw; height: 60vh;
+    }
+    
+    .clientbox{
+        background-color: #ad92e6;
+        height: 80vh;
+    }
+
+    .client{
+        height: 71vh;
+    }
+
+    .client1{
+        height: 60vh;
+    }
+
+    .client2{
+        height: 63vh;
+    }
+
+    .client3{
+        height: 68vh;
+    }
+
+    .vision{
+        background-color: rgb(255, 255, 255);
+        width: 100vw; height: 78vh;   
+    }
+
+    .vision1{
+        height: 65vh;
+    }
+
+    .about{
+              background-color: #8bb689;
+              height: 81vh;
+        }
+        /* .about1{
+            background-color: #9b90ed;
+              color: #000000;
+              width: 35vw;
+              height: 50vh;
+              padding: 3vw;
+        } */
+        .about2{
+              height: 81vh;
+        }
+
+        .about2 p{
+            padding: 1vw;
+        }
+
+        .about3{
+              /* background-color: aquamarine; */
+             margin-top: 3vh;
+        }
+
+        .about1 label{
+            margin-left: .3rem;
+        }
+        
+        .about1 input{
+            margin-right: .1rem;
+        }
+        
+    }
+
+
+    /* ------------------mobile-3----------------------- */
+    @media screen and (max-width:950px){
+        *{
+            font-size:1.5rem ;
+        }
+
+        .nav{
+            background-color: #ffffff; color: #000000; 
+            width: 25vw; height: 30vh;
+            margin-left: 72%;
+        }
+
+        .nav ul{
+            display: inline-block;
+        }
+
+        .nav ul li{
+            margin-top: 1vh; margin-left: -2vw;
+        }
+
+        .nav ul button{
+            margin-top: 5vh; margin-left: 10vw;
+        }
+
+        .box{
+            width: 100vw; height: 37vh;
+        }
+
+        .box1{
+            width: 98vw;
+            height: 35vh;
+            margin-left: 1vw;
+        }
+
+        .box2{
+            display: none;
+        }
+
+        .offer{
+            width: 100vw; height: 150vh;
+        }
+
+        .offer1{
+            width: 98vw;
+            height: 30vh;
+            margin-left: 1vw;
+        }
+
+        .offerimgbox{
+            width: 98vw;
+            height: 110vh;
+            margin-left: 1vw;
+            display: block;
+        }
+
         .offerimgbox1{
-            width: 80vw;
-            height: 25vh;
+            background-color: #d2f08c;
+            width: 98vw;
+            height: 35vh;
+            margin-left: 1vw;
+            text-align: left;
             margin-top: 2vh;
-            margin-left: 10vw;
         }
 
         .offerimgbox2{
-            width: 80vw;
-            height: 25vh;
+            background-color: #f097dd;
+            width: 98vw;
+            height: 35vh;
+            margin-left: 1vw;
+            text-align: left;
             margin-top: 2vh;
-            margin-left: 10vw;
         }
 
         .offerimgbox3{
-            width: 80vw;
-            height: 25vh;
+            background-color: #ad92e6;
+            width: 98vw;
+            height: 35vh;
+            margin-left: 1vw;
+            text-align: left;
             margin-top: 2vh;
-            margin-left: 10vw;
+        }
+
+        .offerimgbox img{
+            display: none;
         }
 
         .whywe{
-            font-size: 1.2rem;
-            height: 65vh;
-            margin-top: 1vh;
+            background-color: #ad92e6;
+            width: 100vw; height: 205vh;
         }
 
         .whywe1{
-            height: 15vh;
+            width: 98vw;
+            height: 35vh;
+            margin-left: 1vw;
         }
 
         .we{
             width: 100vw;
-            height: 48vh;
-            margin-left: 0vw;
+            height: 163vh;
+            display: block;
+            text-align: left;
         }
 
         .we img{
-            width: 5vw; height: 5vh;
+            display: none;
         }
 
         .we1{
-            width: 40vw;
-            height: 20vh;
-        }
-
-        .we11{
-            float: left;
-            width: 30vw;
-            height: 15vh;
+            width: 98vw; height: 34vh;
+            margin-left: 1vw;
+            margin-top: 2vh;
         }
 
         .we2{
-            width: 40vw;
-            height: 20vh;
+            width: 98vw; height: 37vh;
+            margin-left: 1vw;
+            margin-top: 2vh;
         }
 
-        .we21{
-            float: left;
-            width: 30vw;
-            height: 15vh;
+        .we3{
+            width: 98vw; height: 45vh;
+            margin-left: 1vw;
+            margin-top: 2vh;
+        }
+
+        .we4{
+            width: 98vw; height: 38vh;
+            margin-left: 1vw;
+            margin-top: 2vh;
         }
 
         .belive{
-            height: 73vh;
-            font-size: 1.2rem;
+            width: 100vw; height: 80vh;
         }
 
         .clientbox{
-            color: black;
-            width: 100vw;
-            height: 126vh;
-            font-size: 1.2rem;
+            background-color: #ad92e6;
+            width: 100vw; height: 127vh;
         }
 
-        .client {
-            color: black;
-            width: 100vw;
-            height: 122vh;
-            line-height: 2.5vh;
-            display: inline-block;
+        .client{
+            /* background-color: #e692d7; */
+            width: 100vw; height: 120vh;
+            display: block;
         }
 
-        .client img {
-            width: 10vw;
-            height: 10vh;
-            border-radius: 100%;
+        .client img{
+            display: none;
         }
 
-        .client1 {
-            width: 80vw;
-            height: 35vh;
-            margin-left: 10vw;
-            /* float: left; */
+        .client1{
+            /* background-color: #92e696; */
+            width: 90vw; height: 38vh;
         }
 
-.client2 {
-    width: 80vw;
-    height: 35vh;
-    margin-left: 10vw;
- }
-
-.client3 {
-    width: 80vw;
-    height: 37vh;
-    margin-left: 10vw;
-}
-
-
-    .vision {
-            width: 100vw;
-            height: 50vh;
+        .client2{
+            /* background-color: #e692d7; */
+            width: 90vw; height: 38vh;
         }
 
-        .vision1 {
-            height: 43vh;
-            font-size: 1.2rem;
+        .client3{
+            /* background-color: #e692d7; */
+            width: 90vw; height: 38vh;
         }
 
-            .footer{
-        width: 100vw;
-    }
-
-    .add {
-            width: 100vw;
-            height: 80vh;
-            text-align: center;
-            display: inline-block;
-        }
-
-        .message {
-            width: 98.9vw;
-            height: 35vh;
-        }
-
-        .message1 {
-            width: 50vw;
-            height: 25vh;
-            margin-left: 25vw;
-        }
-
-        .add1 {
-            width: 100vw;
-            height: 47vh;
-        }
-
-        .cont {
-            width: 35vw;
-            height: 15vh;
-        }
-
-        .cont1 {
-            width: 45vw;
-            height: 15vh;
-        }
-
-        .message1 label {
-        float: left;
-        margin-left: 3vw;
-    }
-
-    .message1 input {
-        float: right;
-        margin-right: 3vw;
-    }
-
-    .message1 textarea {
-        float: right;
-        margin-right: 3vw;
-        }
-
-    } 
-
-    /* ----------------------------------------------- */
-    /* --------------------For Mobile----------------- */
-    /* ----------------------------------------------- */
-    @media (max-width:830px){
         .vision{
-            height: 63vh;
+            width: 100vw; height: 135vh;
         }
 
+        .vision1{
+            width: 94vw; height: 125vh;
+            margin-left: 3vw;
+        }
+
+        .about{
+            background-color: rgb(124, 181, 232);
+            width: 100vw; height: 140vh;
+            display: block;
+        }
+
+        .about1{
+            width: 100vw; height: 45vh;
+        }
+
+        .about2{
+            width: 100vw; height: 95vh;
+        }
+
+        .about3{
+            width: 100vw; height: 5vh;
+            margin-top: 9vh;
+        }
+
+        .about img{
+            width: 5vw; height: 5vh;
+        }
+        
     }
 
-    /* ----------------------------------------------- */
-    /* --------------------For Mobile----------------- */
-    /* ----------------------------------------------- */
-    @media (max-width:780px){
+
+    /* ------------------mobile-4----------------------- */
+    @media screen and (max-width:850px){
+        *{
+            font-size:1.5rem ;
+        }
+
+        .box{
+            height: 40vh;
+        }
+
         .offer{
-            font-size: 1.2rem;
-            height: 118vh;
+            width: 100vw; height: 180vh;
         }
 
         .offer1{
-            height: 15vh;
-        }
-        
-        .offerimgbox{
-            display: block;
-            width: 100vw;
-            height: 95vh;
+            height: 40vh;
         }
 
-        .offerimgbox img{
-            width: 30vw;
-            height: 20vh;
-            float: left;
-            padding: 1vw;
+        .offerimgbox{
+            height: 130vh;
         }
 
         .offerimgbox1{
-            width: 80vw;
-            height: 30vh;
-            margin-top: 2vh;
-            margin-left: 10vw;
+            height: 42vh;
+            margin-left: .3vw;
         }
 
         .offerimgbox2{
-            width: 80vw;
-            height: 30vh;
-            margin-top: 2vh;
-            margin-left: 10vw;
+            height: 40vh;
+            margin-left: .3vw;
         }
 
         .offerimgbox3{
-            width: 80vw;
-            height: 30vh;
-            margin-top: 2vh;
-            margin-left: 10vw;
+            height: 40vh;
+            margin-left: .3vw;
         }
 
         .whywe{
-            height: 70vh;
+            height: 245vh;
         }
 
         .whywe1{
-            height: 20vh;
+            height: 43vh;
         }
 
-        .belive{
-            height: 76vh;
+        .we{
+            height: 193vh;
         }
 
-    .vision {
-            height: 76vh;
-        }
-    }
-
-    
-
-    /* ----------------------------------------------- */
-    /* --------------------For Mobile----------------- */
-    /* ----------------------------------------------- */
-
-     @media (max-width:650px){
-
-        .about{
-            height: 70vh;
-        }
-        .about1{
-            width: 100vw;
-            height: 96vh;
-        }
-        .about2{
-            height: 50vh;;
-        }
-        .aboutimg img {
-            margin-top: 5vh;
+        .we1{
+            height: 41vh;
         }
 
-        .clientbox{
-            color: black;
-            width: 100vw;
-            height: 145vh;
-        }
-       
-        .vision{
-            width: 100vw;
-            height: 108vh;
-        }
-        .add {
-            width: 100vw;
-            height: 104vh;
-        }
-        .message {
-            height: 50vh;
+        .we2{
+            height: 46vh;
         }
 
-        .message1 {
-            width: 80vw;
-            height: 33vh;
-        }
-    } 
-
-    /* ----------------------------------------------- */
-    /* --------------------For Mobile----------------- */
-    /* ----------------------------------------------- */
-@media(max-width:541px){
-    .main{
-        height: 80vh;
-    }
-
-    .main1{
-        height: 38vh;
-    }
-
-    .offer{
-        height: 161vh;
-    }
-
-    .offer1{
-        width: 90vw;
-        height: 33vh;
-        margin-left: 5vw;
-    }
-
-    .offerimgbox{
-        height: 120vh;
-    }
-
-    .offerimgbox1{
-        width: 90vw;
-        height: 38vh;
-        margin-left: 5vw;
-    }
-
-    .offerimgbox2{
-        width: 90vw;
-        height: 38vh;
-        margin-left: 5vw;
-    }
-
-    .whywe{
-        height: 155vh;
-    }
-
-    .whywe1{
-        width: 90vw;
-        height: 35vh;
-        margin-left: 5vw;
-    }
-
-    .we{
-        width: 100vw;
-        font-size: .8rem;
-    }
-
-    .we img{
-        width: 8vw; height: 8vh;
-        padding: 1vw;
-    }
-
-    .we1{
-        width: 90vw;
-        height: 27vh;
-        margin-left: 5vw;
-        float: none;
-    }
-
-    .we11{
-        width: 80vw;
-        height: 23vh;
-    }
-    
-    .we2{
-        width: 90vw;
-        height:  27vh;
-        margin-left: 5vw;
-        float: none;
-    }
-
-    .we21{
-        width: 80vw;
-        height: 23vh;
-    }
-
-    .belive{
-        height: 85vh;
-    }
-
-    .client1{
-        width: 90vw;
-        height: 42vh;
-        margin-left: 5vw;
-    }
-
-    .client2{
-        width: 90vw;
-        height: 43vh;
-        margin-left: 5vw;
-    }
-
-    .client3{
-        width: 90vw;
-        height: 43vh;
-        margin-left: 5vw;
-    }
-
-    .vision{
-        height: 133vh;
-    }
-
-    .vision1{
-        width: 90vw;
-        height: 125vh;
-        margin-left: 5vw;
-    }
-
-    .message {
-            width: 100vw;
-            height: 53vh;
-        }
-    .message1{
-        width: 70vw;
-        height: 25vh;
-        margin-left: 15vw;
-    }
-    .message1 label {
-        margin-left: 20%;
-    }
-
-    .message1 input::placeholder{
-        text-align: center;
-    }
-}
-
-    /* ----------------------------------------------- */
-    /* --------------------For Mobile----------------- */
-    /* ----------------------------------------------- */
-
-    @media (max-width:525px){
-        .main{
-            height: 89vh;
-        }
-        .main1{
-            height: 45vh;
+        .we3{
+            height: 54vh;
         }
 
-        .offer{
-            height: 200vh;
-        }
-
-        .offer1{
-            height: 35vh;
-        }
-
-        .offerimgbox{
-            height: 159vh;
-        }
-        
-        .offerimgbox1{
-            height: 50vh;
-
-        }
-
-        .offerimgbox2{
-            height: 50vh;
-        }
-
-        .whywe{
-            height: 95vh;
-        }
-
-        .whywe1{
+        .we4{
             height: 43vh;
         }
 
@@ -1714,395 +1162,540 @@
         }
 
         .clientbox{
-            color: black;
-            width: 100vw;
-            height: 160vh;
+            height: 145vh;
         }
 
-        .client1 {
-          height: 45vh;
+        .client{
+            height: 138vh;
         }
 
-        .client2 {
-          height: 47vh;
+        .client1{
+            height: 41vh;
         }
 
-        .client3 {
-            height: 49vh;
+        .client2{
+            height: 43vh;
+        }
+
+        .client3{
+            height: 48vh;
         }
 
         .vision{
-            width: 100vw;
-            height: 150vh;
+            height: 168vh;
         }
 
-        .add {
-            width: 100vw;
-            height: 104vh;
-        }
-
-.message {
-            width: 100vw;
-            height: 53vh;
-        }
-    .message1{
-        width: 50vw;
-            height: 25vh;
-            margin-left: 25vw;
-    }
-    .message1 label {
-        margin-left: 40%;
-    }
-
-    .message1 input::placeholder{
-        text-align: center;
-    }
-}    
-
-/* ----------------------------------------------- */
-    /* --------------------For Mobile----------------- */
-    /* ----------------------------------------------- */
-
-    @media (max-width:416px){
-        .whywe{
+        .vision1{
             height: 160vh;
         }
 
-        .add {
-            height: 94vh;
+        .about{
+            height: 165vh;
         }
 
-        .message {
-            width: 100vw;
-            height: 42vh;
+        .about1{
+            background-color: #8bb689;
+            height: 45vh;
         }
-    .message1{
-        width: 100vw;
-            height: 25vh;
-            margin-left: 0vw;
-    }
-    .message1 label {
-        margin-left: 15%;
-    }
 
-    .message1 input {
-        margin-right: 5%;
-    }
-
-    .message1 textarea {
-        margin-right: 5%;
-    }
-
-    }
-
-
-/* ----------------------------------------------- */
-    /* --------------------For Mobile----------------- */
-    /* ----------------------------------------------- */
-
-@media (max-width:401px){
-.whywe{
-    height: 165vh;
-}
-
-.clientbox{
-    color: black;
-    width: 100vw;
-    height: 155vh;
-}
-
-.client3 {
-    height: 49vh;
-}
-
-.vision{
-    width: 100vw;
-    height: 145vh;
-}
-.add {
-    width: 100vw;
-    height: 96vh;
-}
-.vision{
-        height: 155vh;
-    }
-
-    .message {
-            width: 100vw;
-            height: 42vh;
+        .about2{
+            /* background-color: #b6b6b6; */
+            height: 115vh;
         }
-    .message1{
-        width: 100vw;
-            height: 25vh;
-            margin-left: 0vw;
-    }
-    .message1 label {
-        margin-left: 15%;
-    }
 
-    .message1 input {
-        margin-right: 5%;
-    }
-
-    .message1 textarea {
-        margin-right: 5%;
-    }
-
-    .message1 input::placeholder{
-        text-align: center;
-    }
-}  
-
-/* ----------------------------------------------- */
-    /* --------------------For Mobile----------------- */
-    /* ----------------------------------------------- */
-@media (max-width:379px){
-    .main{
-        height: 100vh;
-    }
-
-    .main1{
-        height: 55vh;
-    }
-
-    .offer{
-        height: 216vh;
-    }
-
-    .offer1{
-        height: 43vh;
-    }
-    
-    .offerimgbox{
-        height: 165vh;
-    }
-
-    .offerimgbox1{
-        height: 53vh;
-    }
-
-    .offerimgbox2{
-        height: 53vh;
-    }
-
-    .whywe{
-        height: 193vh;
-    }
-
-    .whywe1{
-        height: 50vh;
-    }
-
-    .we1{
-        height: 34vh;
-    }
-
-    .we2{
-        height: 32vh;
-    }
-
-    .belive{
-        height: 90vh;
-    }
-
-    .clientbox{
-        height: 165vh;
-    }
-
-    .client1{
-        height: 47vh;
-    }
-
-    .client2{
-        height: 49vh;
-    }
-
-    .client3 {
-        height: 54vh;
-    }
-
-    .vision{
-        height: 200vh;
-    }
-
-    .add {
-        width: 100vw;
-        height: 102vh;
-    }
-
-    .message {
-            width: 100vw;
-            height: 49vh;
+        .about3{
+            height: 5vh;
+            margin-top: 9vh;
         }
-    .message1{
-        width: 100vw;
-            height: 25vh;
-            margin-left: 0vw;
-    }
-    .message1 label {
-        margin-left: 15%;
-    }
 
-    .message1 input {
-        margin-right: 5%;
-    }
-
-    .message1 textarea {
-        margin-right: 5%;
-    }
-
-    .message1 input::placeholder{
-        text-align: center;
-    }
-    
-}
-
-
-/* ----------------------------------------------- */
-    /* --------------------For Mobile----------------- */
-    /* ----------------------------------------------- */
-
-@media (max-width:281px){
-    .main{
-        height: 125vh;
-    }
-
-    .main1{
-        height: 80vh;
-    }
-
-    .offer{
-        height: 325vh;
-    }
-
-    .offer1{
-        height: 75vh;
-    }
-
-    .offerimgbox{
-        height: 240vh;
-    }
-
-    .offerimgbox1{
-        width: 90vw;
-        height: 75vh;
-        margin-left: 5vw;
-    }
-
-    .offerimgbox2{
-        width: 90vw;
-        height: 80vh;
-        margin-left: 5vw;
-    }
-
-    .whywe{
-        height: 267vh;
-    }
-
-    .whywe1{
-        width: 90vw;
-        height: 70vh;
-        margin-left: 5vw;
-    }
-    
-    .we{
-        width: 100vw;
-        font-size: .8rem;
-    }
-
-    .we img{
-        width: 8vw; height: 8vh;
-        padding: 1vw;
-    }
-
-    .we1{
-        width: 90vw;
-        height: 47vh;
-        margin-left: 5vw;
-        float: none;
-    }
-
-    .we11{
-        width: 80vw;
-        height: 33vh;
-    }
-    
-    .we2{
-        width: 90vw;
-        height: 42vh;
-        margin-left: 5vw;
-        float: none;
-    }
-
-    .we21{
-        width: 80vw;
-        height: 33vh;
-    }
-
-    .belive{
-        height: 95vh;
-    }
-
-    .clientbox{
-        height: 170vh;
-        font-size: .8rem;
-    }
-    .client1{
-        width: 90vw;
-        height: 48vh;
-        margin-left: 5vw;
-    }
-    .client2{
-        width: 90vw;
-        height: 50vh;
-        margin-left: 5vw;
-    }
-    .client3{
-        width: 90vw;
-        height: 51vh;
-        margin-left: 5vw;
-    }
-    .vision{
-        height: 300vh;
-        font-size: .8rem;
-    }    
-
-    .add {
-    width: 100vw;
-    height: 124vh;
-}
-    .message {
-            width: 100vw;
-            height: 60vh;
+        .about img{
+            width: 5vw; height: 5vh;
         }
-    .message1{
-        width: 50vw;
-            height: 25vh;
-            margin-left: 25vw;
-    }
-
-    .message1 label {
-        margin-left: 30%;
-    }
-
-    .message1 input::placeholder{
-        text-align: center;
-    }
-
-    .cont{
-        height: 20vh;
         
-        text-align: center;       
     }
-    .cont1{
-        height: 20vh;
-        text-align: center;          
+
+
+    /* ---------------------mobile-5-------------------- */
+    @media screen and (max-width:780px){
+        *{
+            font-size:1.5rem ;
+        }
+
+        .box{
+            height: 50vh;
+        }
+
+        .box1{
+            height: 50vh;
+        }
+
+        .offer{
+            height: 225vh;
+        }
+
+        .offer1{
+            height: 50vh;
+        }
+        
+        .offerimgbox{
+            height: 163vh; width: 100vw;
+            margin-left: 0vw;
+        }
+
+        .offerimgbox1{
+            height: 52vh;
+        }
+
+        .offerimgbox2{
+            height: 52vh;
+        }
+
+        .offerimgbox3{
+            height: 52vh;
+        }
+
+        .whywe{
+            background-color: #ad92e6;
+            width: 100vw; height: 291vh;
+        }
+
+        .whywe1{
+            height: 52vh;
+        }
+        
+        .we{
+            width: 100vw;
+            height: 230vh;
+        }
+
+        .we1{
+            height: 50vh;
+        }
+
+        .we2{
+            height: 57vh;
+        }
+
+        .we3{
+            height: 68vh;
+        }
+
+        .we4{
+            height: 48vh;
+        }
+
+        .belive{
+            height: 93vh;
+        }
+
+        .clientbox{
+            width: 100vw; height: 170vh;
+        }
+
+        .client{
+            width: 100vw; height: 160vh;
+        }
+
+        .client1{
+            height: 48vh;
+            margin-left: 5vw;
+        }
+
+        .client2{
+            height: 53vh;
+            margin-left: 5vw;
+        }
+
+        .client3{
+            height: 54vh;
+            margin-left: 5vw;
+        }
+
+        .vision{
+            height: 220vh;
+        }
+
+        .vision1{
+            height: 205vh;
+        }
+
+        .about{
+            height: 195vh;
+        }
+
+        .about1{
+            width: 100vw; height: 53vh;
+        }
+
+        .about2{
+            width: 100vw; height: 140vh;
+        }
+
+        .about3{
+            height: 5vh;
+            margin-top: 6vh;
+        }
+        
     }
-}
+
+     /* ---------------------mobile-6-------------------- */
+     @media screen and (max-width:580px){
+        *{
+            font-size:1rem ;
+        }
+
+        .box{
+            height: 32vh;
+        }
+
+        .box1{
+            height: 32vh;
+        }
+
+        .offer{
+            height: 146vh;
+        }
+
+        .offer1{
+            height: 26vh;
+        }
+        
+        .offerimgbox{
+            height: 111vh;
+        }
+
+        .offerimgbox1{
+            height: 35vh;
+        }
+
+        .offerimgbox2{
+            height: 35vh;
+        }
+
+        .offerimgbox3{
+            height: 35vh;
+        }
+
+        .whywe{
+            height: 170vh;
+        }
+
+        .whywe1{
+            height: 30vh;
+        }
+        
+        .we{
+            height: 130vh;
+        }
+
+        .we1{
+            height: 30vh;
+        }
+
+        .we2{
+            height: 30vh;
+        }
+
+        .we3{
+            height: 35vh;
+        }
+
+        .we4{
+            height: 28vh;
+        }
+
+        .belive{
+            height: 80vh;
+        }
+        
+        .clientbox{
+            height: 105vh;
+        }
+
+        .client{
+            height: 98vh;
+        }
+
+        .client1{
+            height: 30vh;
+        }
+
+        .client2{
+            height: 30vh;
+        }
+
+        .client3{
+            height: 30vh;
+        }
+
+        .vision{
+            height: 90vh;
+        }
+
+        .vision1{
+            height: 83vh;
+        }
+
+        .about{
+            height: 105vh;
+        }
+
+        .about1{
+            height: 40vh;
+        }
+
+        .about2{
+            height: 65vh;
+        }
+
+        .about3{
+            height: 5vh;
+            margin-top: 6vh;
+        }
+
+        .about1 label{
+            margin-left: 3rem;
+        }
+        
+        .about1 input{
+            margin-right: 2rem;
+        }
+        
+    }
 
 
+    /* ---------------------mobile-7-------------------- */
+    @media screen and (max-width:400px){
+        *{
+            font-size:1rem ;
+        }
 
-   
+        .box{
+            height: 34vh;
+        }
+
+        .box1{
+            height: 34vh;
+        }
+
+        .offer{
+            height: 150vh;
+        }
+
+        .offer1{
+            height: 28vh;
+        }
+
+        .whywe{
+            height: 186vh;
+        }
+
+        .whywe1{
+            height: 33vh;
+        }
+        
+        .we{
+            height: 144vh;
+        }
+
+        .we1{
+            height: 30vh;
+        }
+
+        .we2{
+            height: 36vh;
+        }
+
+        .we3{
+            height: 41vh;
+        }
+
+        .we4{
+            height: 30vh;
+        }
+
+        .belive{
+            height: 80vh;
+        }
+        
+        .clientbox{
+            height: 112vh;
+        }
+
+        .client{
+            height: 105vh;
+        }
+
+        .client1{
+            height: 32vh;
+        }
+
+        .client2{
+            height: 33vh;
+        }
+
+        .client3{
+            height: 33vh;
+        }
+
+        .vision{
+            height: 140vh;
+        }
+
+        .vision1{
+            height: 123vh;
+        }
+
+        .about{
+            height: 135vh;
+        }
+
+        .about1{
+            height: 40vh;
+        }
+
+        .about2{
+            height: 65vh;
+        }
+
+        .about3{
+            height: 5vh;
+            margin-top: 6vh;
+        }
+
+        .about1 label{
+            margin-left: 3rem;
+        }
+        
+        .about1 input{
+            margin-right: 2rem;
+        }
+        
+    }
+
+    /* ---------------------mobile-8-------------------- */
+    @media screen and (max-width:300px){
+        *{
+            font-size:1rem ;
+        }
+
+        .box{
+            height: 40vh;
+        }
+
+        .box1{
+            height: 40vh;
+        }
+
+        .offer{
+            height: 177vh;
+        }
+
+        .offer1{
+            height: 35vh;
+        }
+
+        .offerimgbox{
+            height: 133vh;
+        }
+
+        .offerimgbox1{
+            height: 41vh;
+        }
+
+        .offerimgbox2{
+            height: 41vh;
+        }
+
+        .offerimgbox3{
+            height: 44vh;
+        }
+
+        .whywe{
+            height: 245vh;
+        }
+
+        .whywe1{
+            height: 45vh;
+        }
+        
+        .we{
+            height: 188vh;
+        }
+
+        .we1{
+            height: 39vh;
+        }
+
+        .we2{
+            height: 50vh;
+        }
+
+        .we3{
+            height: 55vh;
+        }
+
+        .we4{
+            height: 37vh;
+        }
+
+        .belive{
+            height: 85vh;
+        }
+        
+        .clientbox{
+            height: 138vh;
+        }
+
+        .client{
+            height: 105vh;
+        }
+
+        .client1{
+            height: 38vh;
+        }
+
+        .client2{
+            height: 40vh;
+        }
+
+        .client3{
+            height: 47vh;
+        }
+
+        .vision{
+            height: 180vh;
+        }
+
+        .vision1{
+            height: 123vh;
+        }
+
+        .about{
+            height: 161vh;
+        }
+
+        .about1{
+            height: 40vh;
+        }
+
+        .about2{
+            height: 65vh;
+        }
+
+        .about3{
+            height: 5vh;
+            margin-top: 6vh;
+        }
+
+        .about1 label{
+            margin-left: 1rem;
+        }
+        
+        .about1 input{
+            margin-right: .5rem;
+        }
+        
+    }
 </style>
-
 </html>
